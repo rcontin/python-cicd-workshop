@@ -9,11 +9,15 @@ jobs:
     steps:
       - checkout
       - python/load-cache
-      - python/install-deps
+      - run:
+          name: Install Python Dependencies
+          command: |
+            pip install --user --no-cache-dir -r requirements.txt
       - python/save-cache
       - run:
-          command: ~/.local/bin/pytest
           name: Test
+          command: ~/.local/bin/pytest
+
 
 workflows:
   main:
