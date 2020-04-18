@@ -16,7 +16,7 @@ jobs:
       - python/save-cache
       - run:
           name: Run Tests
-          command: find ~/ -iname "pytest"
+          command: ~/.local/lib/python3.8/site-packages/pytest
 
 
 workflows:
