@@ -16,7 +16,7 @@ jobs:
       - python/save-cache
       - run:
           name: Run Tests
-          command: ls ~/.local/
+          command: ls ~/.local/lib
 
 
 workflows:
