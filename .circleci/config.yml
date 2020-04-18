@@ -15,7 +15,7 @@ jobs:
             pip install --user --no-cache-dir -r requirements.txt
       - python/save-cache
       - run:
-          name: Test
+          name: Run Tests
           command: ~/.local/bin/pytest
 
 
